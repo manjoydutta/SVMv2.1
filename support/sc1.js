@@ -71,7 +71,7 @@ firebaseRef.ref('user').on("value", function(snapshot){
         alert("You are already registered!");
       }
       else{
-        if (voter.length < 10 ) {
+        if (voter.length < 7 ) {
           voterIdError.textContent = "Voter ID must be 6 characters long and no spaces.";
           valid = false;
         } else {
